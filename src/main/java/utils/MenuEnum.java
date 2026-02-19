@@ -1,4 +1,4 @@
-package co.qaconf.utils;
+package utils;
 
 public enum MenuEnum {
     PRINCIPAL("Home", "Principal"),

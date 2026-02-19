@@ -1,6 +1,6 @@
-package co.qaconf.interactions;
+package interactions;
 
-import co.qaconf.utils.MenuEnum;
+import utils.MenuEnum;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 

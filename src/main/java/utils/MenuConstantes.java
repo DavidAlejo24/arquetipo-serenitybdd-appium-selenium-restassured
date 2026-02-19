@@ -1,4 +1,4 @@
-package co.qaconf.utils;
+package utils;
 
 public class MenuConstantes {
     public static final String PRINCIPAL_IOS = "Principal";
