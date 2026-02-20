@@ -1,31 +1,22 @@
 package poc.stepdefinitios;
 
-import exceptions.BotonCompartirNoEsVisibleException;
-import interactions.Abrir;
+import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
-import net.serenitybdd.screenplay.Actor;
-import questions.BotonCompartir;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import tasks.BuscarVideo;
-import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 
-import static exceptions.BotonCompartirNoEsVisibleException.MENSAJE_BOTON_COMPARTIR_NO_VISIBLE;
 import static userinterfaces.HomePage.BOTON_BUSCAR;
-import static userinterfaces.ShortsPage.BOTON_COMPARTIR;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
-import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
 
-@ExtendWith(SerenityJUnit5Extension.class)
-public class BuscarVideoEnYoutube {
+//@ExtendWith(SerenityJUnit5Extension.class)
+public class NavegarEnYoutube {
 
     /*
     @Test
@@ -80,11 +71,12 @@ public class BuscarVideoEnYoutube {
         );
     }
 
+
      */
 
-    @Test
-    @DisplayName("Buscar un video de futbol en Youtube")
-    public void buscarVideoFutbolEnYoutube() {
+
+    @Given("que el usuario abre Youtube")
+    public void abrirYoutube() {
         OnStage.setTheStage(new OnlineCast());
         theActorCalled("Juan").attemptsTo(
                 WaitUntil.the(BOTON_BUSCAR, isClickable()).forNoMoreThan(10).seconds(),
@@ -92,4 +84,19 @@ public class BuscarVideoEnYoutube {
                 BuscarVideo.enYoutube()
         );
     }
+
+    @When("busca un video de futbol")
+    public void buscarVideoDeFutbol() {
+        // Aquí implementas la acción de búsqueda
+        System.out.println("Buscar video de futbol en Youtube");
+    }
+
+    @Then("debería ver resultados relacionados")
+    public void validarResultados() {
+        // Aquí validas que aparezcan resultados
+        System.out.println("Validar que aparecen resultados de futbol");
+    }
+    //-----------------------------------------------------------------
+
+
 }
