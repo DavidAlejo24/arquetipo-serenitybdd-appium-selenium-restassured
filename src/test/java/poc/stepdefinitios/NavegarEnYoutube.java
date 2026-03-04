@@ -1,16 +1,15 @@
 package poc.stepdefinitios;
 
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import tasks.BuscarVideo;
+import tasks.appium.BuscarVideo;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static userinterfaces.HomePage.BOTON_BUSCAR;
+import static userinterfaces.appium.HomePage.BOTON_BUSCAR;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
@@ -77,6 +76,8 @@ public class NavegarEnYoutube {
 
     @Given("que el usuario abre Youtube")
     public void abrirYoutube() {
+        System.out.printf("El entorno es = "+System.getenv().toString());
+
         OnStage.setTheStage(new OnlineCast());
         theActorCalled("Juan").attemptsTo(
                 WaitUntil.the(BOTON_BUSCAR, isClickable()).forNoMoreThan(10).seconds(),

@@ -1,6 +1,6 @@
-package interactions;
+package actions.appium;
 
-import utils.MenuEnum;
+import utils.appium.MenuEnum;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 

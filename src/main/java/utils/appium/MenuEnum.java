@@ -1,4 +1,4 @@
-package utils;
+package utils.appium;
 
 public enum MenuEnum {
     PRINCIPAL("Home", "Principal"),

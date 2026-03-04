@@ -14,19 +14,35 @@ import static io.cucumber.core.options.Constants.*;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features") // carpeta donde están tus .feature
-
 @ConfigurationParameter(
         key = PLUGIN_PROPERTY_NAME,
         value = "io.cucumber.core.plugin.SerenityReporterParallel,pretty,timeline:build/test-results/timeline"
 )
+/*
+@ConfigurationParameter(
+        key = "-environment",
+        value = "android" // puedes cambiarlo por el tag que quieras ejecutar
+)
+ */
 
 @ConfigurationParameter(
         key = FILTER_TAGS_PROPERTY_NAME,
-        value = "@android" // puedes cambiarlo por el tag que quieras ejecutar
+        value = "@ejemploWeb" // puedes cambiarlo por el tag que quieras ejecutar
 )
 
-
 public class CucumberTestSuite {
-    // No necesitas métodos aquí, JUnit Platform se encarga de ejecutar los features
+
+    /*
+    @BeforeAll
+    static void setup() {
+        System.out.println("Iniciando la suite de pruebas...");
+    }
+
+    @Before
+    public void beforeScenario(Scenario scenario) {
+        System.out.println("Iniciando escenario: " + scenario.getName());
+    }
+
+     */
 
 }

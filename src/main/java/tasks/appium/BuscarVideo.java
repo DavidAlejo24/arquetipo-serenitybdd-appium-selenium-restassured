@@ -1,13 +1,13 @@
-package tasks;
+package tasks.appium;
 
-import interactions.EscribirEnInputs;
+import actions.appium.EscribirEnInputs;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
-import static userinterfaces.HomePage.CAMPO_BUSCAR_VIDEOS;
+import static userinterfaces.appium.HomePage.CAMPO_BUSCAR_VIDEOS;
 
 public class BuscarVideo implements Task {
 

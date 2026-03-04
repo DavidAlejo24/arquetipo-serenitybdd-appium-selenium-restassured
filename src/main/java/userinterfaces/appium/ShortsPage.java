@@ -1,4 +1,4 @@
-package userinterfaces;
+package userinterfaces.appium;
 
 import io.appium.java_client.AppiumBy;
 import net.serenitybdd.screenplay.targets.Target;

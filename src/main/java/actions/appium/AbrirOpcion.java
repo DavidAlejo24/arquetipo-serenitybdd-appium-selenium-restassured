@@ -1,15 +1,13 @@
-package interactions;
+package actions.appium;
 
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
-import utils.MenuEnum;
+import utils.appium.MenuEnum;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-import userinterfaces.HomePage;
-import utils.MobileHelper;
-
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
+import userinterfaces.appium.HomePage;
+import utils.appium.MobileHelper;
 
 public class AbrirOpcion implements Interaction {
 

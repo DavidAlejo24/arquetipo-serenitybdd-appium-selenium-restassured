@@ -1,12 +1,10 @@
-package interactions;
+package actions.appium;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Enter;
-import userinterfaces.HomePage;
-
-import static net.serenitybdd.screenplay.Tasks.instrumented;
+import userinterfaces.appium.HomePage;
 
 public class EscribirEnInputs implements Interaction {
 

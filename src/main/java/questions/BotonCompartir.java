@@ -3,7 +3,7 @@ package questions;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static userinterfaces.ShortsPage.BOTON_COMPARTIR;
+import static userinterfaces.appium.ShortsPage.BOTON_COMPARTIR;
 
 public class BotonCompartir implements Question<Boolean> {
 

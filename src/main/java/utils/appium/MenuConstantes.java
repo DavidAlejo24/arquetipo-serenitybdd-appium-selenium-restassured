@@ -1,4 +1,4 @@
-package utils;
+package utils.appium;
 
 public class MenuConstantes {
     public static final String PRINCIPAL_IOS = "Principal";
