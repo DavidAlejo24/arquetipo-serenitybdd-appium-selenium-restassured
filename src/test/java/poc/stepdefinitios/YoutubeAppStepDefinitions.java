@@ -15,7 +15,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
 
 //@ExtendWith(SerenityJUnit5Extension.class)
-public class NavegarEnYoutube {
+public class YoutubeAppStepDefinitions {
 
     /*
     @Test
@@ -77,7 +77,6 @@ public class NavegarEnYoutube {
     @Given("que el usuario abre Youtube")
     public void abrirYoutube() {
         System.out.printf("El entorno es = "+System.getenv().toString());
-
         OnStage.setTheStage(new OnlineCast());
         theActorCalled("Juan").attemptsTo(
                 WaitUntil.the(BOTON_BUSCAR, isClickable()).forNoMoreThan(10).seconds(),
