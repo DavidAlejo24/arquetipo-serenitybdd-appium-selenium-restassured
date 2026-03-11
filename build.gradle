@@ -1,9 +1,9 @@
 buildscript {
 
     dependencies {
-        //classpath("net.serenity-bdd:serenity-single-page-report:4.1.3")
-        classpath("net.serenity-bdd:serenity-gradle-plugin:4.1.3")
-        classpath("net.serenity-bdd:serenity-single-page-report:4.1.3")
+        classpath("net.serenity-bdd:serenity-single-page-report:4.3.2")
+        classpath("net.serenity-bdd:serenity-gradle-plugin:4.3.2")
+
     }
 }
 
@@ -57,29 +57,19 @@ dependencies {
     testImplementation "io.rest-assured:xml-path:5.4.0"
 }
 
-//test {
-    //useJUnitPlatform()
-    //testLogging.showStandardStreams = true
-   //systemProperties System.getProperties()
-//}
 
 test {
     useJUnitPlatform()
     testLogging.showStandardStreams = true
     systemProperties System.getProperties()
     //systemProperty "file.encoding", "UTF-8"
-    //finalizedBy("aggregate","reports") // CLAVE para tu problema
-}
+    finalizedBy("aggregate","reports")
+
 
 serenity {
-    reports = ["report","reports","single-page-html","aggregate"]
+    //testRoot = "poc"
+    //requirementsBaseDir = "src/test/resources/features"
+    reports = ["single-page-html"]
 }
 
 gradle.startParameter.continueOnFailure = true
-
-tasks.named("aggregate") {
-    mustRunAfter("test")
-}
-
-//test.finalizedBy(aggregate, reports)
-//test.finalizedBy(aggregate)

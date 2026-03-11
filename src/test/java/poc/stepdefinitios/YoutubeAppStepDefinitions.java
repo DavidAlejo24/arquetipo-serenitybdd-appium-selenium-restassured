@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
 import static userinterfaces.appium.HomePage.BOTON_BUSCAR;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
@@ -81,6 +82,7 @@ public class YoutubeAppStepDefinitions {
         //System.out.printf("El entorno es = "+System.getenv().toString());
         OnStage.setTheStage(new OnlineCast());
         theActorCalled("Juan").attemptsTo(
+                WaitUntil.the(BOTON_BUSCAR, isEnabled()).forNoMoreThan(20).seconds(),
                 WaitUntil.the(BOTON_BUSCAR, isClickable()).forNoMoreThan(10).seconds(),
                 Click.on(BOTON_BUSCAR),
                 BuscarVideo.enYoutube()
