@@ -16,7 +16,7 @@ plugins {
 
 group = 'co.qaconf'
 version = '1.0-SNAPSHOT'
-//defaultTasks 'clean', 'test', 'aggregate'
+defaultTasks 'clean', 'test', 'aggregate'
 
 repositories {
     mavenCentral()
@@ -64,7 +64,7 @@ test {
     systemProperties System.getProperties()
     //systemProperty "file.encoding", "UTF-8"
     finalizedBy("aggregate","reports")
-
+}
 
 serenity {
     //testRoot = "poc"

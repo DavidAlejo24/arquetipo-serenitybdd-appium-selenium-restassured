@@ -1,6 +1,7 @@
 #language: es
 #Author: David Cruz
 #Email: david3505@hotmail.com
+@all
 Característica: Probar consultas de la API de Pokemon
 
   @ejemploAPI

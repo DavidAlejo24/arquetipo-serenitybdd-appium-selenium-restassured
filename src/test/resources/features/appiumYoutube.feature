@@ -1,6 +1,7 @@
+@all
 Feature: Navegación en Youtube
 
-  @appiumExample1 @android
+  @ejemploMovil @android
   Scenario: Buscar un video en Youtube
     Given que el usuario abre Youtube
     When busca un video de futbol
