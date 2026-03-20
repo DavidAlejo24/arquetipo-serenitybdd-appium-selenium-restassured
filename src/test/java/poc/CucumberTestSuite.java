@@ -27,22 +27,8 @@ import static io.cucumber.core.options.Constants.*;
 
 @ConfigurationParameter(
         key = FILTER_TAGS_PROPERTY_NAME,
-        value = "@ejemploMovil" // puedes cambiarlo por el tag que quieras ejecutar
+        value = "@demoQaElements" // puedes cambiarlo por el tag que quieras ejecutar
 )
 
 public class CucumberTestSuite {
-
-    /*
-    @BeforeAll
-    static void setup() {
-        System.out.println("Iniciando la suite de pruebas...");
-    }
-
-    @Before
-    public void beforeScenario(Scenario scenario) {
-        System.out.println("Iniciando escenario: " + scenario.getName());
-    }
-
-     */
-
 }
