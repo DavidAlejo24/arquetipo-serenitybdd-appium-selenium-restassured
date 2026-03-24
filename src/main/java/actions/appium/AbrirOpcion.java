@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-import userinterfaces.appium.HomePage;
+import userinterfaces.youtube.HomePage;
 import utils.appium.MobileHelper;
 
 public class AbrirOpcion implements Interaction {

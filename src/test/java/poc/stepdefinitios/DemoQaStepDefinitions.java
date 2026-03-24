@@ -7,8 +7,8 @@ import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import tasks.web.DemoQaTask;
-import tasks.web.NavigateTo;
+import tasks.demoqa.DemoQaTask;
+import tasks.demoblaze.NavigateTo;
 
 import java.util.List;
 

@@ -3,16 +3,14 @@ package poc.stepdefinitios;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.junit5.SerenityJUnit5Extension;
-import org.junit.jupiter.api.extension.ExtendWith;
-import tasks.appium.BuscarVideo;
+import tasks.youtube.BuscarVideo;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
-import static userinterfaces.appium.HomePage.BOTON_BUSCAR;
+import static userinterfaces.youtube.HomePage.BOTON_BUSCAR;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;

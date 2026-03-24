@@ -1,4 +1,4 @@
-package userinterfaces.web;
+package userinterfaces.demoblaze;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;

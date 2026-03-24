@@ -1,4 +1,4 @@
-package tasks.web;
+package tasks.demoblaze;
 
 import net.serenitybdd.model.environment.EnvironmentSpecificConfiguration;
 import net.serenitybdd.screenplay.Performable;
