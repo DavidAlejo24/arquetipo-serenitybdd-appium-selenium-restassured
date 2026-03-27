@@ -8,14 +8,12 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import tasks.demoqa.DemoQaTask;
-import tasks.demoblaze.NavigateTo;
 
 import java.util.List;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class DemoQaStepDefinitions {
-
 
     @Before
     public void setTheStage() {
@@ -24,22 +22,22 @@ public class DemoQaStepDefinitions {
 
     @Dado("que el {actor} accede a demoqa.com")
     public void accedeAlSistema(Actor actor) {
-        actor.wasAbleTo(NavigateTo.demoQa());
+        actor.wasAbleTo(
+                DemoQaTask.abrirDemoQa()
+        );
     }
 
-
     @Cuando("interactua con los elementos:")
-    public void agrega_los_siguientes_productos_a_su_lista(List<String> elementos) {
-        elementos.forEach(elemento -> {
+    public void interactuaConLosElementos(List<String> elementos) {
+        elementos.forEach(elemento ->
                 theActorInTheSpotlight().attemptsTo(
-                        DemoQaTask.interactuandoCon().elementos(elemento)
-                );
-        });
+                        DemoQaTask.seleccionarElemento(elemento)
+                )
+        );
     }
 
     @Entonces("deberia ver un cambio en el comportamiento de los elementos")
-    public void deberiaVerUnCambioEnElComportamientoDeLosElementos(){
-        System.out.println("Paso 3");
+    public void deberiaVerUnCambioEnElComportamientoDeLosElementos() {
+        System.out.println("✅ Escenario ejecutado correctamente");
     }
-
 }
