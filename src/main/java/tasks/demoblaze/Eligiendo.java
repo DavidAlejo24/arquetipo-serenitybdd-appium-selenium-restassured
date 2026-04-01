@@ -1,4 +1,4 @@
-package tasks.web;
+package tasks.demoblaze;
 
 import net.serenitybdd.annotations.Steps;
 import net.serenitybdd.screenplay.Actor;
@@ -6,9 +6,9 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;
-import userinterfaces.web.CategoriasUI;
-import userinterfaces.web.HeaderUI;
-import userinterfaces.web.ProductosUI;
+import userinterfaces.demoblaze.CategoriasUI;
+import userinterfaces.demoblaze.HeaderUI;
+import userinterfaces.demoblaze.ProductosUI;
 import utils.web.ControlAlarmas;
 import utils.web.GeneradorAleatorio;
 

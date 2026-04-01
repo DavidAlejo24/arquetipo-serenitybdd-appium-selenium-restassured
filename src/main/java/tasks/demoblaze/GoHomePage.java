@@ -1,4 +1,4 @@
-package tasks.web;
+package tasks.demoblaze;
 
 import net.serenitybdd.annotations.DefaultUrl;
 import net.serenitybdd.core.pages.PageObject;

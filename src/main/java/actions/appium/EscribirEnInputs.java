@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Enter;
-import userinterfaces.appium.HomePage;
+import userinterfaces.youtube.HomePage;
 
 public class EscribirEnInputs implements Interaction {
 

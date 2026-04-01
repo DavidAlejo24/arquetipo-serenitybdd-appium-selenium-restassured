@@ -8,6 +8,12 @@ Característica: Compra de productos en Demoblaze
   Escenario: Usuario realiza una compra exitosa de 2 productos aleatorios en Demoblaze
     Dado que el usuario accede al sitio Demoblaze
     Cuando agrega 2 productos ramdom de cualquier categoria al carrito
-    #Y visualiza el carrito de compras
-    #Y completa el formulario de compra con los datos del JSON y finaliza la compro
-    #Entonces debe ver un mensaje de confirmacion con el ID de la orden y el monto total
+    Y visualiza el carrito de compras
+    Y completa el formulario de compra con los datos del JSON y finaliza la compro
+    Entonces debe ver un mensaje de confirmacion con el ID de la orden y el monto total
+
+  @ejemploWeb1
+  Escenario: QA revisa los estilos de la pagina principal
+    Dado que el QA accede al sitio Demoblaze
+    #Cuando realiza un screenshot de la pagina principal
+    #Entonces debe comparar el screenshot con la imagen base de la pagina principal

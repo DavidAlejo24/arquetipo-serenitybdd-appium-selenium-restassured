@@ -1,4 +1,4 @@
-package userinterfaces.web;
+package userinterfaces.demoblaze;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
